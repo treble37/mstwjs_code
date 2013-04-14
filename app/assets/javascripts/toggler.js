@@ -2,7 +2,12 @@ function init() {
   var $toggle_links = $(".detail_toggle");
   $toggle_links.click(function(event) {
     $detail = $(this).siblings(".detail");
-    $detail.toggleClass("hidden");   
+    if($detail.hasClass("hidden")) {
+      $(this).text("Hide Details");
+    } else {
+      $(this).text("Show Details");
+    }
+    $detail.toggleClass("hidden");
     event.preventDefault();
   });
 }

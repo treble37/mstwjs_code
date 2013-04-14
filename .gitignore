@@ -5,4 +5,9 @@ tmp/
 .sass-cache/
 public/assets/
 .DS_Store
+<<<<<<< Updated upstream
 .idea/
+=======
+config/database.yml
+.powenv
+>>>>>>> Stashed changes

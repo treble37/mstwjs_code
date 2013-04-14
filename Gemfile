@@ -17,6 +17,10 @@ end
 
 gem 'jquery-rails'
 gem 'rails-backbone'
+
+gem 'execjs'
+
+gem 'therubyracer'
 #gem 'sprockets_spacely'
 
 # Use unicorn as the web server
