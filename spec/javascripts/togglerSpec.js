@@ -10,12 +10,16 @@
 // });
 
 describe("clicking a show description link", function() {
+  // beforeEach(function() {
+  //   loadFixtures("one_index_trip.html");
+  //   init();
+  //   $(".detail_toggle").click();
+  // });
   beforeEach(function() {
     loadFixtures("one_index_trip.html");
-    init();
+    toggler.init();
     $(".detail_toggle").click();
   });
-  
   it("shows the trip description", function() {
     expect($('.detail')).not.toHaveClass("hidden");
   });
